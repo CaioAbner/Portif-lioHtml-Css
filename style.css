@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Silkscreen&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Coolors */
+
+:root {
+    --NavColor: #1C1C1C;
+    --NavBtn: #DC143C;
+    --NavBtnHover: #8b0000;
+
+    --HomeInfoBg: #000000bb;
+
+    --transition03: 0.3s ease-in-out;
+    --transition04: 0.4s ease-in-out;
+    --transition05: 0.5s ease-in-out;
+}
+
+#NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    height: 6vh;
+
+    background-color: var(--NavColor);
+}
+
+#header_logo {
+    max-height: 2.5rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: var(--transition03);
+}
+
+#header_logo:hover {
+    transform: scale(1.1);
+}
+
+#nav_header {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.1rem;
+
+    gap: 1.5rem;
+}
+
+#nav_header a {
+    font-family: "Silkscreen";
+    font-weight: 300;
+    color: #fff;
+
+    transition: var(--transition05);
+}
+
+#nav_header a:focus {
+    padding: 0.5rem;
+    border-radius: 4rem;
+
+    background-color: var(--NavBtn);
+}
+
+#btn_header {
+    padding: 0.5rem;
+    border-radius: 4rem;
+
+    font-family: "Poppins";
+
+    color: #fff;
+    background-color: var(--NavBtnHover);
+    letter-spacing: 0.1rem;
+    transition: var(--transition05);
+}
+
+#btn_header:hover {
+    background-color: var(--NavBtn);
+}
+
+/* Home-Main */
+
+#home {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+
+    background-image: url(./gif/cyberGif.gif);
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+}
+
+#home_img {
+    max-height: 25rem;
+    border-radius: 50%;
+}
+
+#home_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 70vh;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.1rem;
+
+    background-color: var(--HomeInfoBg);
+}
+
+#home_nome {
+    font-family: "Silkscreen";
+    font-size: 1.5rem;
+}
+
+#home_profissao {
+    padding: 1.2rem;
+    border-radius: 4rem;
+
+    font-family: "Poppins";
+    cursor: pointer;
+
+    background-color: var(--NavBtn);
+
+    transition: var(--transition04);
+}
+
+#home_profissao:hover {
+    background-color: var(--NavColor);
+    border: 0.1rem solid white;
+}
+
+/* Section */
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+#sobre_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#sobre_titulo {
+    font-family: "Silkscreen";
+    font-size: 2.5rem;
+}
+
+#sobre_titulo::before {
+    content: '';
+    background-image: url(./image/detalhe_duplo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sobre_img {
+    height: 30rem;
+}
